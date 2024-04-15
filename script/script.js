@@ -1,3 +1,3 @@
-const CTA = gsap.fromTo('.CTA', {
-    y: '50%', duration: 1, repeat: -1
+gsap.from('.CTA', {
+    y: '-50%', duration: 1, repeat: -1
 })
