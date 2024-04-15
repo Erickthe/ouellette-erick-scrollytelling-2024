@@ -1,0 +1,39 @@
+:root {
+    --white: #ffffff;
+    --lighter-grey: #d0d1cd;
+    --light-grey: #7d7d7d;
+    --grey: #525252;
+    --dark-grey: #383838;
+    --black: #000000;
+    --red: #973f3f;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    background-image: url(/img/img_arriere_plan/title_screen.jpg);
+    color: var(--white);
+}
+
+.titre {
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Overlock', sans-serif;
+    
+}
+
+.paragraphe {
+    text-align: center;
+    font-family: 'PT serif', sans-serif;
+    font-size: 11px;
+}
+
+.CTA {
+    text-align: center;
+    padding: 50px;
+}
