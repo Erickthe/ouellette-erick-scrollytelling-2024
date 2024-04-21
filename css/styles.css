@@ -14,19 +14,27 @@ body {
 }
 
 header {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--black);
     background-image: url(../img/img_arriere_plan/title_screen.jpg);
     color: var(--white);
 }
 
-.titre {
+h1 {
     text-align: center;
     margin: 0;
     font-family: 'Overlock', sans-serif;
-    
+    height: 50vh;
 }
+
+footer {
+    text-align: center;
+    font-family: 'PT serif', sans-serif;
+    font-size: 11px;
+}
+
+
 
 .paragraphe {
     text-align: center;
@@ -36,5 +44,61 @@ header {
 
 .CTA {
     text-align: center;
-    padding: 50px;
+    padding: 25vh;
+}
+
+.section.chapitre1 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_ciel_chapitre_1.png);
+}
+
+.section.chapitre2 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_foret_arbre_milieu__chapitre_2.png);
+}
+
+.section.chapitre3 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_vide_noir_chapitre_3.png);
+}
+
+.section.chapitre4 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_foret_chapitre_4.png);
+}
+
+.section.chapitre5 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_foret_chapitre_5.png);
+}
+
+.section.chapitre6 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_vide_chapitre_6.png);
+}
+
+.section.chapitre7 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_foret_chapitre_7.png);
+}
+
+.section.chapitre8 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-image: url(../img/img_arriere_plan/background_foret_chapitre_8.png);
 }
