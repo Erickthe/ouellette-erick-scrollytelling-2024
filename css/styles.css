@@ -47,58 +47,112 @@ footer {
     padding: 25vh;
 }
 
-.section.chapitre1 {
+#chapitre1 {
+    width: 100vw;
+    height: 100vh;
+    border: red 1px;
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.irish-titre {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 25%;
+    
+}
+
+.lettre {
+    width: 25%;
+    height: 25%;
+    margin-left: 9.5%;
+    margin-top: 2%;
+}
+
+.titre-reste {
+    text-align: center;
+    color: var(--white);
+    font-size: 150px;
+    margin-top: -9%;
+}
+
+.personnage1 {
+    width: 15%;
+}
+
+#chapitre2 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_ciel_chapitre_1.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre2 {
+.personnage2 {
+    width: 15%;
+}
+
+#chapitre3 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
-    background-image: url(../img/img_arriere_plan/background_foret_arbre_milieu__chapitre_2.png);
+    background-image: url(../img/img_arriere_plan/background_foret_arbre_loin__chapitre_2.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre3 {
+#chapitre4 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_vide_noir_chapitre_3.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre4 {
+#chapitre5 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_4.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre5 {
+#chapitre6 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_5.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre6 {
+#chapitre7 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_vide_chapitre_6.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre7 {
+#chapitre8 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_7.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.section.chapitre8 {
+#chapitre9 {
     width: 100vw;
     height: 100vh;
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_8.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
