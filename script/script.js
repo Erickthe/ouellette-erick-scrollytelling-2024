@@ -2,6 +2,15 @@ gsap.from('.CTA', {
     y: '-50%', duration: 1.5, repeat: -1
 })
 
+window.addEventListener("scroll", function()
+{
+    body.classList.add("is-scrolling");
+    let timer = setTimeout(function () {
+        body.classList.remove("is-scrolling");
+    }, 100);
+}
+)
+
 gsap.fromTo('.personnage2', 
 { y: -10},
 { y: 1200, rotation: 360, duration: 3} 

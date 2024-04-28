@@ -54,20 +54,31 @@ footer {
 }
 
 .balise {
-    height: 10000px;
+    height: 500vh;
     
 }
 
 .spritesheet {
-    width: 140px;
-    height: 140px;
-    background-image: url(/img/img_elements_visuels/spritesheet_boule_clignotement.png);
+    width: 10vw;
+    aspect-ratio: 1/1;
+    background-image: url(../img/img_elements_visuels/spritesheet_boule_clignotement.png);
     position: absolute;
     top: 50vh;
     left: 50vw;
     border: 1px solid rgba(218, 0, 0, 0.5);
     animation-name: boule;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    animation-play-state: paused;
+    background-size: 6000% 100%;
     
+}
+
+
+@keyframes boule {
+    from {background-position: 0 0;}
+    to {background-position: -6000% 0;}
 }
 
 ul.technique-gsap{
