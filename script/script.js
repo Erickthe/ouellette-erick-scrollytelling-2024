@@ -4,7 +4,7 @@ gsap.from('.CTA', {
 
 gsap.fromTo('.personnage2', 
 { y: -10},
-{ y: 1000, rotation: 360, duration: 3} 
+{ y: 1200, rotation: 360, duration: 3} 
 )
 
 let timeline_un = gsap.timeline()
@@ -25,4 +25,37 @@ let timeline_deux = gsap.timeline()
 .fromTo('.monstre_chapitre_4',
 {opacity: 0},
 {opacity: 1}
+)
+
+let timeline_trois = gsap.timeline()
+.fromTo('.personnage5',
+{x: -175},
+{x: 500, duration: 5, ease: "none"}
+)
+.fromTo('.monstre_chapitre_5',
+{x: 1180},
+{x: 200, duration: 0.25, ease: "none"}
+)
+
+let timeline_quatre = gsap.timeline()
+.fromTo('.personnage6',
+{opacity: 0},
+{opacity: 1, duration: 5}
+)
+
+
+let timeline_cinq = gsap.timeline()
+.fromTo('.personnage7',
+{x: -1500},
+{x: 75, duration: 8, ease: "none"}
+)
+.fromTo('.yeux',
+{opacity: 0},
+{opacity: 1}
+)
+
+let timeline_six = gsap.timeline()
+.fromTo('.personnage9',
+{x: -1500},
+{x: 0}
 )
