@@ -45,13 +45,16 @@ footer {
 .paragraphe {
     text-align: center;
     font-family: 'PT serif', sans-serif;
-    font-size: 11px;
+    font-size: 0.75vw;
 }
 
 .CTA {
     text-align: center;
+    font-size: 1vw;
     padding: 25vh;
 }
+
+
 
 .balise {
     height: 500vh;
@@ -128,19 +131,22 @@ ul.technique-gsap li{
 
 .lettre {
     position: absolute;
-    width: 25vw;
-    height: 25vh;
-    left: 9.5%;
-    top: 19%;
+    width: 2vw;
+    left: 33vw;
+    top: 26.5vh;
     border: 1px solid rgba(218, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 935px) {
+ 
 }
 
 .titre-reste {
     position: absolute;
     color: var(--white);
-    font-size: 150px;
-    top: 13.5vh;
-    left: 24vw;
+    font-size: 4vw;
+    top: 21vh;
+    left: 35vw;
     border: 1px solid rgba(218, 0, 0, 0.5);
 }
 
@@ -148,7 +154,7 @@ ul.technique-gsap li{
     position: absolute;
     width: 10vw;
     top: 40vh;
-    left: 15vw;
+    left: 28vw;
     border: 1px solid rgba(218, 0, 0, 0.5);
     
 }
