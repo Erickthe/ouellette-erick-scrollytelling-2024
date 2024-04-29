@@ -137,8 +137,18 @@ ul.technique-gsap li{
     border: 1px solid rgba(218, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 935px) {
- 
+@media screen and (max-aspect-ratio: 16/9) {
+    .screen {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/9){
+    .screen {
+        height: 100vh;
+        width: auto;
+    }
 }
 
 .titre-reste {
