@@ -1,22 +1,37 @@
+gsap.registerPlugin(ScrollTrigger);
+
+
 gsap.from('.CTA', {
     y: '-50%', duration: 1.5, repeat: -1
 })
 
-window.addEventListener("scroll", function()
-{
-    body.classList.add("is-scrolling");
-    let timer = setTimeout(function () {
-        body.classList.remove("is-scrolling");
-    }, 100);
-}
-)
 
-gsap.fromTo('.personnage2', 
-{ y: "0vh"},
-{ y: "110vh", rotation: 360, duration: 3} 
-)
 
-let timeline_un = gsap.timeline()
+let timeline_zero = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top top',
+        end: 'bottom top',
+        trigger: '#chapitre2',  
+    }
+})
+.fromTo('.personnage2', 
+{ y: "0vh", opacity: 0.1},
+{ y: "110vh", opacity: 2, rotation: 360, duration: 3} 
+);
+
+let timeline_un = gsap.timeline({
+    ScrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top top',
+        end: 'bottom top',
+        trigger: '#chapitre3',
+    }
+})
 .fromTo('.personnage3', 
 {x: "-20vw"},
 {x: "43vw", duration: 4, ease: "none"}

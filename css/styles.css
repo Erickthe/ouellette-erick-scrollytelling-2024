@@ -105,6 +105,20 @@ ul.technique-gsap li{
     margin: 5px 0;
 }
 
+@media screen and (max-aspect-ratio: 16/9) {
+    .screen {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/9){
+    .screen {
+        height: 100vh;
+        width: auto;
+    }
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 1
 ----------------------------------------------------------*/ 
@@ -124,7 +138,7 @@ ul.technique-gsap li{
     width: 50vw;
     top: 5vh;
     left: 25vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
     
 }
@@ -134,22 +148,10 @@ ul.technique-gsap li{
     width: 2vw;
     left: 33vw;
     top: 26.5vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
-@media screen and (max-aspect-ratio: 16/9) {
-    .screen {
-        height: auto;
-        width: 100vw;
-    }
-}
 
-@media screen and (min-aspect-ratio: 16/9){
-    .screen {
-        height: 100vh;
-        width: auto;
-    }
-}
 
 .titre-reste {
     position: absolute;
@@ -157,7 +159,7 @@ ul.technique-gsap li{
     font-size: 4vw;
     top: 21vh;
     left: 35vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .personnage1 {
@@ -165,7 +167,7 @@ ul.technique-gsap li{
     width: 10vw;
     top: 40vh;
     left: 28vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
 }
 
@@ -188,7 +190,7 @@ ul.technique-gsap li{
     width: 15vw;
     top: 0vh;
     left: 40vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
 }
 
@@ -219,7 +221,7 @@ ul.technique-gsap li{
     width: 9vw;
     bottom: 1vh;
     left: 1vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
 }
 
@@ -227,7 +229,7 @@ ul.technique-gsap li{
     position: absolute;
     width: 20vw;
     left: 40vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
 }
 
@@ -258,7 +260,7 @@ ul.technique-gsap li{
     width: 9vw;
     bottom: 1vh;
     left: 1vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .monstre_chapitre_4 {
@@ -266,7 +268,7 @@ ul.technique-gsap li{
     width: 20vw;
     left: 40vw;
     top: 3vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .texte_chapitre_4 {
@@ -296,7 +298,7 @@ ul.technique-gsap li{
     width: 5vw;
     bottom: 5vh;
     left: 1vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
 }
 
@@ -305,7 +307,7 @@ ul.technique-gsap li{
     width: 25vw;
     right: 25vw;
     top: 25vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .texte_chapitre_5 {
@@ -335,7 +337,7 @@ ul.technique-gsap li{
     width: 10vw;
     bottom: 1vh;
     left: 40vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .texte_chapitre_6 {
@@ -365,7 +367,7 @@ ul.technique-gsap li{
     width: 7.5vw;
     bottom: 1vh;
     left: 40vw;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .oeil_1 {
@@ -373,7 +375,7 @@ ul.technique-gsap li{
     width: 11vw;
     left: 40vw;
     top: 5vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .oeil_2 {
@@ -381,7 +383,7 @@ ul.technique-gsap li{
     width: 11vw;
     left: 25vw;
     top: 20vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .oeil_3 {
@@ -389,7 +391,7 @@ ul.technique-gsap li{
     width: 11vw;
     left: 15vw;
     top: 40vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .oeil_4 {
@@ -397,7 +399,7 @@ ul.technique-gsap li{
     width: 11vw;
     right: 7.5vw;
     top: 5vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
     
 }
 
@@ -406,7 +408,7 @@ ul.technique-gsap li{
     width: 11vw;
     right: 26vw;
     top: 25vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 
 }
 
@@ -415,7 +417,7 @@ ul.technique-gsap li{
     width: 11vw;
     left: 7.5vw;
     top: 5vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .oeil_7 {
@@ -423,7 +425,7 @@ ul.technique-gsap li{
     width: 11vw;
     right: 7.5vw;
     bottom: 20vh;
-    border: 1px solid rgba(218, 0, 0, 0.5);
+    border: 1px solid green;
 }
 
 .texte_chapitre_7 {
@@ -474,6 +476,7 @@ ul.technique-gsap li{
     width: 13.5vw;
     left: 7.5vw;
     bottom: 1vh;
+    border: 1px solid green;
 }
 
 .texte_chapitre_9 {
