@@ -1,19 +1,24 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
 
 
 gsap.from('.CTA', {
     y: '-50%', duration: 1.5, repeat: -1
 })
 
+/* ---- Animation chapitre 1 ----- */
 
 
-let timeline_zero = gsap.timeline({
+
+/* ---- Animation chapitre 2 ----- */
+
+gsap.timeline({
     scrollTrigger: {
         markers: true,
         pin: true,
         scrub: true,
-        start: 'top top',
-        end: 'bottom top',
+        start: 'top 0%',
+        end: 'bottom 50%',
         trigger: '#chapitre2',  
     }
 })
@@ -22,13 +27,15 @@ let timeline_zero = gsap.timeline({
 { y: "110vh", opacity: 2, rotation: 360, duration: 3} 
 );
 
-let timeline_un = gsap.timeline({
-    ScrollTrigger: {
+/* ---- Animation chapitre 3 ----- */
+
+gsap.timeline({
+    scrollTrigger: {
         markers: true,
         pin: true,
         scrub: true,
-        start: 'top top',
-        end: 'bottom top',
+        start: 'top 0%',
+        end: 'bottom 50%',
         trigger: '#chapitre3',
     }
 })
@@ -41,7 +48,19 @@ let timeline_un = gsap.timeline({
 {y: "20vh", opacity:1, duration: 1}
 )
 
-let timeline_deux = gsap.timeline()
+
+/* ---- Animation chapitre 4 ----- */
+
+gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top 0%',
+        end: 'bottom 50%',
+        trigger: '#chapitre4',
+    }
+})
 .fromTo('.personnage4',
 {x: "-20vw"},
 {x: "30vw", duration: 3}
@@ -51,7 +70,18 @@ let timeline_deux = gsap.timeline()
 {opacity: 1}
 )
 
-let timeline_trois = gsap.timeline()
+/* ---- Animation chapitre 5 ----- */
+
+gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top 0%',
+        end: 'bottom 50%',
+        trigger: '#chapitre5',
+    }
+})
 .fromTo('.personnage5',
 {x: "-20vw"},
 {x: "20vw", duration: 5, ease: "none"}
@@ -61,14 +91,35 @@ let timeline_trois = gsap.timeline()
 {x: 200, duration: 0.25, ease: "none"}
 )
 
-let timeline_quatre = gsap.timeline()
+/* ---- Animation chapitre 6 ----- */
+
+gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top 0%',
+        end: 'bottom 50%',
+        trigger: '#chapitre6',
+    }
+})
 .fromTo('.personnage6',
 {opacity: 0},
 {opacity: 1, duration: 5}
 )
 
+/* ---- Animation chapitre 7 ----- */
 
-let timeline_cinq = gsap.timeline()
+gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top 0%',
+        end: 'bottom 50%',
+        trigger: '#chapitre7',
+    }
+})
 .fromTo('.personnage7',
 {x: "-50vw"},
 {x: "0vw", duration: 8, ease: "none"}
@@ -78,7 +129,18 @@ let timeline_cinq = gsap.timeline()
 {opacity: 1}
 )
 
-let timeline_six = gsap.timeline()
+/* ---- Animation chapitre 9 ----- */
+
+gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: 'top 0%',
+        end: 'bottom 50%',
+        trigger: '#chapitre9',
+    }
+})
 .fromTo('.personnage9',
 {x: "-20vw"},
 {x: "5vw", duration: 2}
