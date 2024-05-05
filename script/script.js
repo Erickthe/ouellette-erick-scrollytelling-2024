@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
 gsap.from('.CTA', {
     y: '-50%', duration: 1.5, repeat: -1
