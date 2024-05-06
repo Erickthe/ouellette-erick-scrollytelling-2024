@@ -59,7 +59,7 @@ gsap.timeline({
         pin: true,
         scrub: true,
         start: 'top 0%',
-        end: 'bottom 90%',
+        end: 'bottom 50%',
         trigger: '#chapitre3',
     }
 })
