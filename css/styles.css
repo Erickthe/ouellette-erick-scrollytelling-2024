@@ -133,7 +133,7 @@ ul.technique-gsap li{
     
 }
 
-.irish-titre {
+#Calque_1 {
     position: absolute;
     width: 50vw;
     top: 5vh;
@@ -143,9 +143,9 @@ ul.technique-gsap li{
     
 }
 
-.lettre {
+#Calque_2 {
     position: absolute;
-    width: 2vw;
+    width: 10vw;
     left: 33vw;
     top: 26.5vh;
     border: 1px solid green;
@@ -162,13 +162,12 @@ ul.technique-gsap li{
     border: 1px solid green;
 }
 
-.personnage1 {
-    position: absolute;
-    width: 10vw;
-    top: 40vh;
-    left: 28vw;
-    border: 1px solid green;
-    
+#madame {
+    visibility: hidden;
+}
+
+#irish {
+    fill: var(--red);
 }
 
 /*---------------------------------------------------------- 
