@@ -8,6 +8,8 @@ gsap.from('.CTA', {
 })
 
 
+let bodyindex = document.querySelector('body')
+
 let scrollIndex;
 window.addEventListener('scroll', () => {
     bodyindex.classList.add('is-scrolling');
@@ -16,7 +18,7 @@ window.addEventListener('scroll', () => {
 });
 
 function removeClassIsScrolling() {
-    bodyIndex.classList.remove('is-scrolling');
+    bodyindex.classList.remove('is-scrolling');
 }
 
 /* ---- Animation chapitre 1 ----- */
@@ -25,7 +27,7 @@ gsap.set(['#irish'],{drawSVG: '0% 0%'});
 function anim() {
     gsap.to('#irish', {
         drawSVG: '0% 100%',
-        duration: 2
+        duration: 7
     })
 }
 
@@ -36,30 +38,30 @@ gsap.to('#lettre_r', {
 
 /* ---- Animation chapitre 2 ----- */
 
-gsap.timeline({
+let timeline_un = gsap.timeline({
     scrollTrigger: {
         markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
-        end: 'bottom 50%',
+        end: 'bottom 90%',
         trigger: '#chapitre2',  
     }
 })
 .fromTo('.personnage2', 
 { y: "0vh", opacity: 0.1},
-{ y: "110vh", opacity: 2, rotation: 360, duration: 3} 
+{ y: "100vh", opacity: 2, rotation: 360, duration: 3}
 );
 
 /* ---- Animation chapitre 3 ----- */
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+      //  markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
-        end: 'bottom 50%',
+        end: 'bottom 90%',
         trigger: '#chapitre3',
     }
 })
@@ -70,18 +72,18 @@ gsap.timeline({
 .fromTo('.monstre_chapitre_3',
 {y: "0vh", opacity: 0},
 {y: "20vh", opacity:1, duration: 1}
-)
+);
 
 
 /* ---- Animation chapitre 4 ----- */
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+      //  markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
-        end: 'bottom 50%',
+        end: 'bottom 90%',
         trigger: '#chapitre4',
     }
 })
@@ -98,11 +100,11 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+        //markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
-        end: 'bottom 50%',
+        end: 'bottom 90%',
         trigger: '#chapitre5',
     }
 })
@@ -126,11 +128,11 @@ gsap.fromTo('.personnage6',
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+       // markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
-        end: 'bottom 50%',
+        end: 'bottom 90%',
         trigger: '#chapitre7',
     }
 })
@@ -147,10 +149,10 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+       // markers: true,
         pin: true,
         start: 'top 0%',
-        end: 'bottom 50%',
+        end: 'bottom 90%',
         toggleActions: 'play reverse complete reset',
         trigger: '#chapitre9',
     }
