@@ -8,6 +8,8 @@ gsap.from('.CTA', {
 })
 
 
+let bodyindex = document.querySelector('body')
+
 let scrollIndex;
 window.addEventListener('scroll', () => {
     bodyindex.classList.add('is-scrolling');
@@ -16,7 +18,7 @@ window.addEventListener('scroll', () => {
 });
 
 function removeClassIsScrolling() {
-    bodyIndex.classList.remove('is-scrolling');
+    bodyindex.classList.remove('is-scrolling');
 }
 
 /* ---- Animation chapitre 1 ----- */
@@ -25,7 +27,7 @@ gsap.set(['#irish'],{drawSVG: '0% 0%'});
 function anim() {
     gsap.to('#irish', {
         drawSVG: '0% 100%',
-        duration: 2
+        duration: 7
     })
 }
 
@@ -41,8 +43,8 @@ gsap.timeline({
         markers: true,
         pin: true,
         scrub: true,
-        start: 'top 0%',
-        end: 'bottom 50%',
+        start: 'top top',
+        end: '100% top',
         trigger: '#chapitre2',  
     }
 })
@@ -55,11 +57,11 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+      //  markers: true,
         pin: true,
         scrub: true,
-        start: 'top 0%',
-        end: 'bottom 90%',
+        start: '50% 50%',
+        end: 'bottom top',
         trigger: '#chapitre3',
     }
 })
@@ -77,7 +79,7 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+      //  markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
@@ -98,7 +100,7 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+        //markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
@@ -126,7 +128,7 @@ gsap.fromTo('.personnage6',
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+       // markers: true,
         pin: true,
         scrub: true,
         start: 'top 0%',
@@ -147,7 +149,7 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+       // markers: true,
         pin: true,
         start: 'top 0%',
         end: 'bottom 50%',
