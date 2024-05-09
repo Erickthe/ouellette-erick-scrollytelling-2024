@@ -4,7 +4,7 @@ gsap.registerPlugin(MorphSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
 
 gsap.from('.CTA', {
-    y: '-50%', duration: 1.5, repeat: -1
+    y: '-40vh', duration: 1.5, repeat: -1
 })
 
 
@@ -43,8 +43,8 @@ let timeline_un = gsap.timeline({
         markers: true,
         pin: true,
         scrub: true,
-        start: 'top 0%',
-        end: 'bottom 90%',
+        start: '100% bottom',
+        end: '100% top',
         trigger: '#chapitre2',  
     }
 })
@@ -59,9 +59,9 @@ gsap.timeline({
     scrollTrigger: {
       //  markers: true,
         pin: true,
-        scrub: true,
-        start: 'top 0%',
-        end: 'bottom 90%',
+        scrub: 0.5,
+        start: '100% bottom',
+        end: '10% top',
         trigger: '#chapitre3',
     }
 })
@@ -89,7 +89,7 @@ gsap.timeline({
 })
 .fromTo('.personnage4',
 {x: "-20vw"},
-{x: "30vw", duration: 3}
+{x: "30vw", duration: 10}
 )
 .fromTo('.monstre_chapitre_4',
 {opacity: 0},
@@ -102,6 +102,7 @@ gsap.timeline({
     scrollTrigger: {
         //markers: true,
         pin: true,
+        
         scrub: true,
         start: 'top 0%',
         end: 'bottom 90%',
@@ -144,6 +145,21 @@ gsap.timeline({
 {opacity: 0},
 {opacity: 1}
 )
+
+/* ---- Animation chapitre 8 ----- */
+gsap.to("#chapitre8", {
+    backgroundPosition: "100% 50%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#chapitre8",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+        markers: true,
+        
+    }
+});
+
 
 /* ---- Animation chapitre 9 ----- */
 

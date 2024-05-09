@@ -28,10 +28,13 @@ header {
 }
 
 h1 {
+    position: relative;
     text-align: center;
-    margin: 0;
     font-family: 'Overlock', sans-serif;
-    height: 50vh;
+    top: 10vh;
+    font-size: 2vw;
+    margin: 0;
+    color: var(--red);
 }
 
 footer {
@@ -43,15 +46,20 @@ footer {
 }
 
 .paragraphe {
+    position: absolute;
     text-align: center;
     font-family: 'PT serif', sans-serif;
     font-size: 0.75vw;
+    top: 40vh;
+    left: 3vw;
+    color: var(--red);
 }
 
 .CTA {
-    text-align: center;
-    font-size: 1vw;
-    padding: 25vh;
+    position: absolute;
+    left: 50vw;
+    top: 90vh;
+    
 }
 
 
@@ -129,7 +137,7 @@ ul.technique-gsap li{
     border: red 1px;
     background-color: var(--black);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     
 }
 
@@ -180,7 +188,7 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_ciel_chapitre_1.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
    
 }
 
@@ -209,16 +217,16 @@ ul.technique-gsap li{
     width: 100vw;
     height: 100vh;
     border: red 1px;
-    background-image: url(../img/img_arriere_plan/background_foret_arbre_loin__chapitre_2.png);
+    background-image: url(../img/img_arriere_plan/background_foret_chapitre_8.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     
 }
 
 .personnage3 {
     position: absolute;
     width: 9vw;
-    bottom: 1vh;
+    bottom: 7vh;
     left: 1vw;
     border: 1px solid green;
     
@@ -250,14 +258,14 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_vide_noir_chapitre_3.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     
 }
 
 .personnage4 {
     position: absolute;
     width: 9vw;
-    bottom: 1vh;
+    bottom: 9vh;
     left: 1vw;
     border: 1px solid green;
 }
@@ -288,14 +296,14 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_4.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     
 }
 
 .personnage5 {
     position: absolute;
     width: 5vw;
-    bottom: 5vh;
+    bottom: 9vh;
     left: 1vw;
     border: 1px solid green;
     
@@ -327,7 +335,7 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_5.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     
 }
 
@@ -357,14 +365,14 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_vide_chapitre_6.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     
 }
 
 .personnage7 {
     position: absolute;
     width: 7.5vw;
-    bottom: 1vh;
+    bottom: 9vh;
     left: 40vw;
     border: 1px solid green;
 }
@@ -439,13 +447,15 @@ ul.technique-gsap li{
 # Chapitre 8
 ----------------------------------------------------------*/ 
 #chapitre8 {
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     border: red 1px;
-    background-image: url(../img/img_arriere_plan/background_foret_chapitre_7.png);
+    background-image: url(../img/img_arriere_plan/background_foret_arbre_loin__chapitre_2.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 0% 50%;
     
 }
 
@@ -467,7 +477,7 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_chapitre_8.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
 }
 
 .personnage9 {
