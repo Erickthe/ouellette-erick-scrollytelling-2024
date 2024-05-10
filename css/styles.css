@@ -141,42 +141,43 @@ ul.technique-gsap li{
     
 }
 
-#Calque_1 {
+#evS3lUG4hVd1 {
     position: absolute;
-    width: 50vw;
-    top: 5vh;
-    left: 25vw;
-    border: 1px solid green;
-    
-    
+    top: 0vh;
+    left: 30vw;
+    width: 40vw;
 }
 
-#Calque_2 {
+#ehE8HkQ1myA1 {
     position: absolute;
-    width: 10vw;
-    left: 33vw;
-    top: 26.5vh;
-    border: 1px solid green;
+    width: 40vw;
+    top: 25vh;
+    left: 30vw;
 }
 
-
-
-.titre-reste {
-    position: absolute;
-    color: var(--white);
-    font-size: 4vw;
-    top: 21vh;
-    left: 35vw;
-    border: 1px solid green;
-}
 
 #madame {
     visibility: hidden;
+    
 }
 
-#irish {
-    fill: var(--red);
+#template,
+#path {
+    fill: none;
 }
+
+#template {
+    stroke-width: 1px;
+    stroke: var(--dark-grey);
+}
+
+#path {
+    stroke: var(--red);
+    stroke-width: 20px;
+    stroke-dashoffset: 0.001;
+    stroke-dasharray: 0px, 999999px;
+}
+
 
 /*---------------------------------------------------------- 
 # Chapitre 2

@@ -22,19 +22,30 @@ function removeClassIsScrolling() {
 }
 
 /* ---- Animation chapitre 1 ----- */
+gsap.set("#path", {drawSVG: "0% 0%"});
 
-gsap.set(['#irish'],{drawSVG: '0% 0%'});
-function anim() {
-    gsap.to('#irish', {
-        drawSVG: '0% 100%',
-        duration: 7
-    })
-}
-
-
-gsap.to('#lettre_r', {
-    morphSVG: '#madame'
+gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        pin: true,
+        scrub: true,
+        start: '100% bottom',
+        end: '100% top',
+        trigger: '#chapitre1'
+    }
 })
+.to("#path", {
+    drawSVG: "0% 100%",
+    duration: 1,
+    ease: "power1,inOut"
+})
+.to("#lettre", {
+    duration: 10,
+    morphSVG: {
+        shape: "#madame",
+        shapeIndex: 1
+    }
+});
 
 /* ---- Animation chapitre 2 ----- */
 
