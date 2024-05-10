@@ -65,31 +65,50 @@ footer {
 
 
 .balise {
-    height: 500vh;
+    height: 50vh;
     
 }
 
-.spritesheet {
+
+.spritesheet1 {
     width: 10vw;
     aspect-ratio: 1/1;
-    background-image: url(../img/img_elements_visuels/spritesheet_boule_clignotement.png);
+    background-image: url(../img/img_elements_visuels/spritesheet_grossit.png);
+    position: absolute;
+    top: 20vh;
+    left: 45vw;
+    border: 1px solid rgba(218, 0, 0, 0.5);
+    animation-name: boule1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+    animation-play-state: paused;
+    background-size: 2400% 100%;
+    
+}
+
+.spritesheet2 {
+    width: 10vw;
+    aspect-ratio: 1/1;
+    background-image: url(../img/img_elements_visuels/spritesheet_eclat.png);
     position: absolute;
     top: 50vh;
     left: 50vw;
     border: 1px solid rgba(218, 0, 0, 0.5);
-    animation-name: boule;
+    animation-name: boule2;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(60);
+    animation-timing-function: steps(24);
     animation-play-state: paused;
-    background-size: 6000% 100%;
+    background-size: 2400% 100%;
     
 }
 
 
-@keyframes boule {
+
+@keyframes boule1 {
     from {background-position: 0 0;}
-    to {background-position: -6000% 0;}
+    to {background-position: -2400% 0;}
 }
 
 ul.technique-gsap{
@@ -495,6 +514,7 @@ ul.technique-gsap li{
     font-size: 1vw;
     color: var(--red);
     right: 30vw;
+    top: 10vh;
 }
 
 
