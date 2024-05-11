@@ -26,7 +26,7 @@ gsap.set("#path", {drawSVG: "0% 0%"});
 
 gsap.timeline({
     scrollTrigger: {
-        markers: true,
+        markers: false,
         pin: true,
         scrub: true,
         start: '100% bottom',
@@ -51,7 +51,7 @@ gsap.timeline({
 
 let timeline_un = gsap.timeline({
     scrollTrigger: {
-        markers: true,
+        markers: false,
         pin: true,
         scrub: true,
         start: '100% bottom',
@@ -68,7 +68,7 @@ let timeline_un = gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-      //  markers: true,
+        markers: false,
         pin: true,
         scrub: 0.5,
         start: '100% bottom',
@@ -90,7 +90,7 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-      //  markers: true,
+        markers: false,
         pin: true,
         scrub: true,
         start: 'top 0%',
@@ -111,9 +111,8 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-        //markers: true,
+        markers: false,
         pin: true,
-        
         scrub: true,
         start: 'top 0%',
         end: 'bottom 90%',
@@ -140,7 +139,7 @@ gsap.fromTo('.personnage6',
 
 gsap.timeline({
     scrollTrigger: {
-       // markers: true,
+       markers: false,
         pin: true,
         scrub: true,
         start: 'top 0%',
@@ -180,7 +179,7 @@ gsap.timeline({
 
 gsap.timeline({
     scrollTrigger: {
-       // markers: true,
+        markers: false,
         pin: true,
         start: 'top 0%',
         end: 'bottom 90%',
