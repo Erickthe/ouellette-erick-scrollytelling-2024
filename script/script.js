@@ -158,18 +158,22 @@ gsap.timeline({
 )
 
 /* ---- Animation chapitre 8 ----- */
-gsap.to("#chapitre8", {
-    backgroundPosition: "100% 50%",
-    ease: "none",
+let speed = 200;
+
+gsap.timeline({
     scrollTrigger: {
-        trigger: "#chapitre8",
-        start: "top bottom",
-        end: "bottom top",
+        pin: true,
         scrub: true,
-        markers: true,
+        start: 'top top',
+        end: 'bottom top',
+        trigger: '.chapitre8',
         
     }
-});
+})
+.to('#milieu', 
+{x: "130vw", duration: 5}
+)
+
 
 
 /* ---- Animation chapitre 9 ----- */

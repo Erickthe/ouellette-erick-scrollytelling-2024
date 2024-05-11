@@ -373,6 +373,7 @@ ul.technique-gsap li{
     font-size: 1vw;
     color: var(--white);
     right: 35vw;
+    top: 1vh;
 }
 
 /*---------------------------------------------------------- 
@@ -473,10 +474,7 @@ ul.technique-gsap li{
     border: red 1px;
     background-image: url(../img/img_arriere_plan/background_foret_arbre_loin__chapitre_2.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: 0% 50%;
-    
+    background-size: cover; 
 }
 
 .texte_chapitre_8 {
@@ -485,7 +483,27 @@ ul.technique-gsap li{
     font-size: 1vw;
     color: var(--red);
     right: 42.5vw;
+    z-index: 1;
 }
+
+#milieu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100vw;
+    
+}
+
+#proche {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -200vw;
+}
+
+
 
 /*---------------------------------------------------------- 
 # Chapitre 9
