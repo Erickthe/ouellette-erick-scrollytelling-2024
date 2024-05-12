@@ -42,3 +42,7 @@ Je vais mettre la police Overlock en commentaire pour régler ce problème
 
 ### Résultat
 En enlevant cette police le problème est parti
+
+
+## Rapport projet ScrollyTelling après optimisation
+[Rapport du 12 mai 2024, 6:01:41](https://pagespeed.web.dev/analysis/https-erick-tim-momo-com/j3b3u2j9sq?form_factor=desktop)
