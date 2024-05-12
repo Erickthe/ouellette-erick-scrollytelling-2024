@@ -119,7 +119,7 @@ ul.technique-gsap{
     font-family: monospace;
     font-weight: 400;
     width: auto;
-    display: inline-block;
+    display: none;
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
@@ -228,6 +228,11 @@ ul.technique-gsap li{
     font-size: 0.8vw;
     color: var(--white);
     right: 0vw;
+}
+
+#courbe {
+    position: absolute;
+    display: block;
 }
 
 /*---------------------------------------------------------- 

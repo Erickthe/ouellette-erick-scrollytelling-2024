@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
+/*
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
+*/
 gsap.registerPlugin(MotionPathPlugin);
 
 gsap.from('.CTA', {
@@ -22,6 +24,7 @@ function removeClassIsScrolling() {
 }
 
 /* ---- Animation chapitre 1 ----- */
+/*
 gsap.set("#path", {drawSVG: "0% 0%"});
 
 gsap.timeline({
@@ -47,6 +50,8 @@ gsap.timeline({
     }
 });
 
+*/
+
 /* ---- Animation chapitre 2 ----- */
 
 let timeline_un = gsap.timeline({
@@ -63,6 +68,7 @@ let timeline_un = gsap.timeline({
 { y: "0vh", opacity: 0.1},
 { y: "100vh", opacity: 2, rotation: 360, duration: 3}
 );
+
 
 /* ---- Animation chapitre 3 ----- */
 
@@ -165,12 +171,15 @@ gsap.timeline({
         scrub: true,
         start: 'top top',
         end: 'bottom top',
-        trigger: '.chapitre8',
+        trigger: '#chapitre8',
         
     }
 })
 .to('#milieu', 
 {x: "130vw", duration: 5}
+)
+.to('#proche', 
+{x:"0vw", duration: 5}
 )
 
 
