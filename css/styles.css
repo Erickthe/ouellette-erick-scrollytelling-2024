@@ -60,7 +60,7 @@ footer {
 
 .CTA {
     position: absolute;
-    left: 50vw;
+    left: 48vw;
     top: 90vh;
     
 }
@@ -541,5 +541,3 @@ ul.technique-gsap li{
     right: 30vw;
     top: 10vh;
 }
-
-
