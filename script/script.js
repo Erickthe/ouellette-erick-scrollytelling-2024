@@ -1,8 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
-/*
+
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
-*/
+
 gsap.registerPlugin(MotionPathPlugin);
 
 gsap.from('.CTA', {
@@ -24,7 +24,7 @@ function removeClassIsScrolling() {
 }
 
 /* ---- Animation chapitre 1 ----- */
-/*
+
 gsap.set("#path", {drawSVG: "0% 0%"});
 
 gsap.timeline({
@@ -50,7 +50,7 @@ gsap.timeline({
     }
 });
 
-*/
+
 
 /* ---- Animation chapitre 2 ----- */
 
