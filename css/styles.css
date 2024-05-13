@@ -23,7 +23,7 @@ header {
     width: 100vw;
     height: 100vh;
     background-color: var(--black);
-    background-image: url(../img/img_arriere_plan/title_screen.jpg);
+    background-image: url(../img/img_arriere_plan/title_screen.png);
     color: var(--white);
 }
 
