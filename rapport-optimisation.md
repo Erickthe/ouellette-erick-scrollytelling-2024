@@ -18,7 +18,7 @@ L'image a été compressé mais l'image prend encore un petit peu trop de temps 
 
 ## Problème 2
 
-### Une blaise viewport semble ne pas marcher
+### Une balise viewport semble ne pas marcher
 
 Le site ne détecte pas cette balise
 
